@@ -1,0 +1,15 @@
+.introduction-container {
+  padding-block: 5rem;
+}
+h3 {
+  color: var(--cyan);
+  letter-spacing: 0.5rem;
+}
+.underline {
+  color: var(--white);
+  font-weight: 700;
+}
+.introduction-text {
+  word-spacing: 0.5rem;
+  line-height: 2rem;
+}

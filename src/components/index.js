@@ -1,0 +1,7 @@
+export { default as Navigation } from './navigation/Navigation'
+export { default as Banner } from './banner/Banner'
+export { default as Recommended } from './recommended/Recommended'
+export { default as Footer } from './footer/Footer'
+export { default as Introduction } from './introduction/Introduction'
+export { default as Form } from './form/Form'
+export { default as Fleet } from './fleet/Fleet'

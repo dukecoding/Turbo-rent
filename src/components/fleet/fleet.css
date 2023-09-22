@@ -1,0 +1,29 @@
+.fleet-container {
+  padding-block: 5rem;
+}
+.display-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .display-container {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .display-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .display-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .display-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

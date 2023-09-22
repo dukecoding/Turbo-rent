@@ -1,0 +1,16 @@
+.car img {
+  height: 140px;
+  width: 200px;
+  aspect-ratio: 16/10;
+}
+.car {
+  margin: auto;
+  cursor: pointer;
+}
+.car p {
+  background-color: var(--grey);
+  position: relative;
+  top: 30px;
+  color: #ffffff;
+  padding-left: 3px;
+}

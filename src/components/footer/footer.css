@@ -1,0 +1,15 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 2rem;
+  border-top: 2px var(--grey) solid;
+}
+li,
+a {
+  text-decoration: none;
+}
+.footer-container li:hover {
+  list-style-image: url('../../images/footer_arrow.png');
+}

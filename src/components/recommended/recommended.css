@@ -1,0 +1,55 @@
+.recommended-container {
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.recommended-container img {
+  height: 300px;
+  aspect-ratio: 16/10;
+}
+h2 {
+  font-size: 2rem;
+}
+.element {
+  padding-inline: 1em;
+  cursor: pointer;
+}
+.snap-inline {
+  scroll-snap-type: inline mandatory;
+}
+.snap-inline > * {
+  scroll-snap-align: start;
+}
+
+@media screen and (min-width: 2000px) {
+  .recommended-container {
+    grid-auto-columns: 22%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .recommended-container {
+    grid-auto-columns: 52%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recommended-container {
+    grid-auto-columns: 72%;
+  }
+}
+.margin-spacer {
+  width: 98%;
+  margin: auto;
+}
+.margin-spacer ::-webkit-scrollbar {
+  width: 5em;
+}
+.margin-spacer ::-webkit-scrollbar-track {
+  background-color: var(--grey);
+  border-radius: 50px;
+}
+.margin-spacer ::-webkit-scrollbar-thumb {
+  background-color: var(--cyan);
+  border-radius: 50px;
+}

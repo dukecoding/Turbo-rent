@@ -1,0 +1,26 @@
+.banner-container {
+  background: url('../../images/lambo_banner-kopia2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.banner-title {
+  background: transparent;
+  font-size: 2rem;
+  margin-left: 1.5em;
+}
+h1 {
+  background: transparent;
+}
+.bg-transparent {
+  background: transparent;
+}
+@media screen and (max-width: 767px) {
+  .banner-title {
+    font-size: 1rem;
+    margin-left: 0.7em;
+  }
+}

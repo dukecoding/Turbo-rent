@@ -1,0 +1,40 @@
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 5rem;
+}
+.detail-container img {
+  width: 300px;
+}
+.back-button {
+  border: 3px var(--cyan) solid;
+  border-radius: 0.5rem;
+  color: var(--cyan);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.back-button:hover {
+  transition: var(--animation-duration);
+  background-color: var(--cyan);
+}
+.triangle {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-top: 8px solid transparent;
+  border-right: 13px solid white;
+  border-bottom: 8px solid transparent;
+}
+.car-description {
+  font-style: italic;
+}
+.car-image {
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .detail-container {
+    padding-block: 0rem;
+  }
+}
