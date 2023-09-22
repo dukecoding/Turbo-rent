@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+<img href="./src/images/turbo_rent.png"></img>
+
+# Turbo Rent is a fun React.js project created to try different design tricks
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
