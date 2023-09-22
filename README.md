@@ -1,4 +1,4 @@
-<img href="./src/images/turbo_rent.png"></img>
+<img src="./src/images/turbo_rent.png"></img>
 
 # Turbo Rent is a fun React.js project created to try different design tricks
 
