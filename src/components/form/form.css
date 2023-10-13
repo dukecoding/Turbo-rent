@@ -42,21 +42,21 @@ input {
   color: var(--black);
 }
 .pop-up {
-  position: absolute;
+  position: relative;
+  text-align: center;
   border: 4px var(--cyan) solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 2rem 5rem;
+  padding: 1rem;
   border-radius: 25px;
-  box-shadow: 8px 8px 24px 0px rgb(29, 30, 31);
-  z-index: 2;
-}
-.pop-up-message {
-  background: transparent;
+  box-shadow: 0px 0px 80px 0px rgb(29, 30, 31);
 }
 .pop-up-hide {
   z-index: -1;
+}
+.pop-up-show {
+  z-index: 1;
 }
 @media screen and (max-width: 767px) {
   input {
@@ -66,49 +66,6 @@ input {
     font-size: 1rem;
   }
 }
-.on-submit-animation {
-  -webkit-animation: slide-out-blurred-right 0.45s
-    cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
-  animation: slide-out-blurred-right 0.45s
-    cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
-}
-@-webkit-keyframes slide-out-blurred-right {
-  0% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-    transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
-    transform: translateX(1000px) scaleX(2) scaleY(0.2);
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
-    opacity: 0;
-  }
-}
-@keyframes slide-out-blurred-right {
-  0% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-    transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
-    transform: translateX(1000px) scaleX(2) scaleY(0.2);
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
-    opacity: 0;
-  }
+.hide-submit-button {
+  visibility: hidden;
 }

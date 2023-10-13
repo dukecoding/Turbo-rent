@@ -1,17 +1,22 @@
 import React, { useState } from 'react'
 import './form.css'
+import { setSelectionRange } from '@testing-library/user-event/dist/utils'
 export default function Form() {
-  const [animationClassName, setAnimationClassName] = useState('')
-
-  let data = {
-    name: '',
-    email: '',
-    message: '',
-  }
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [hideSubmitButtonClass, setHideSubmitButtonClass] = useState('')
+  const [messageShowClass, setMessageShowClass] = useState('pop-up-hide')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setAnimationClassName('on-submit-animation green')
+    if (name !== '' && email !== '' && message !== '') {
+      setHideSubmitButtonClass('hide-submit-button')
+      setMessageShowClass('pop-up-show')
+      setName('')
+      setEmail('')
+      setMessage('')
+    }
   }
 
   return (
@@ -24,15 +29,17 @@ export default function Form() {
         <input
           type='text'
           placeholder='NAME'
+          value={name}
           onChange={(e) => {
-            data.name = e.target.value
+            setName(e.target.value)
           }}
         />
         <input
           type='email'
           placeholder='EMAIL'
+          value={email}
           onChange={(e) => {
-            data.email = e.target.value
+            setEmail(e.target.value)
           }}
         />
         <textarea
@@ -40,19 +47,22 @@ export default function Form() {
           placeholder='MESSAGE'
           cols={25}
           rows={7}
+          value={message}
           onChange={(e) => {
-            data.message = e.target.value
+            setMessage(e.target.value)
           }}
         />
 
         <input
           type='submit'
           value='SEND'
-          className={`submit ${animationClassName}`}
+          className={`submit ${hideSubmitButtonClass}`}
         />
       </form>
-      <div className='pop-up pop-up-hide'>
-        <h2 className='pop-up-message'>Thank you for leaving us a message</h2>
+      <div className={`pop-up ${messageShowClass}`} id='pop-up'>
+        <h2 className='pop-up-message'>
+          ✨ Thank you for leaving us a message ✨
+        </h2>
       </div>
     </div>
   )
