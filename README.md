@@ -1,6 +1,6 @@
 # Welcome to Turbo Rent!
 
-<img src="./src/images/turbo_rent.png"></img>
+<img src="./src/images/turbo_rent.png" alt="Turbo Rent logo" height="312"></img>
 
 ## This is a fun React.js project that I used to work on my design skills
 
