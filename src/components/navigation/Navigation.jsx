@@ -48,6 +48,14 @@ export default function Navigation() {
           <div
             onClick={() => {
               setActiveClass('active')
+
+              // Disabling scroll
+              let scrollTop = document.documentElement.scrollTop
+              let scrollLeft = document.documentElement.scrollLeft
+              document.documentElement.style.scrollBehavior = 'auto'
+              window.onscroll = () => {
+                window.scrollTo(scrollLeft, scrollTop)
+              }
             }}
           >
             <div className='burger-icon'>
@@ -61,6 +69,10 @@ export default function Navigation() {
               className='close-menu'
               onClick={() => {
                 setActiveClass('')
+
+                // Enabling scroll (and reset to scroll-smooth)
+                window.onscroll = () => {}
+                document.documentElement.style.scrollBehavior = 'smooth'
               }}
             >
               <div className='close-menu-button'></div>
