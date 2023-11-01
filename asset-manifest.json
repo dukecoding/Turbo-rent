@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/TurboRent/static/css/main.e5508123.css",
+    "main.js": "/TurboRent/static/js/main.b9ebc0ab.js",
+    "static/media/card_rs3.jpeg": "/TurboRent/static/media/card_rs3.1148e67a32038f8c9710.jpeg",
+    "static/media/card_aventador.jpeg": "/TurboRent/static/media/card_aventador.7d15db51a5f2da1ac110.jpeg",
+    "static/media/lambo_banner-kopia2.jpeg": "/TurboRent/static/media/lambo_banner-kopia2.2ac88720edcab52ec848.jpeg",
+    "static/media/card_gtr.jpeg": "/TurboRent/static/media/card_gtr.716bb34137427531edc8.jpeg",
+    "static/media/card_m5cs.png": "/TurboRent/static/media/card_m5cs.8d8e8b2d6c04b2369520.png",
+    "static/media/card_mclaren.jpeg": "/TurboRent/static/media/card_mclaren.8b708c0f11635384592d.jpeg",
+    "static/media/card_a45s.jpeg": "/TurboRent/static/media/card_a45s.35a5ca988e4e0d655863.jpeg",
+    "static/media/card_hurracan.jpeg": "/TurboRent/static/media/card_hurracan.f28c140cc4b7c87daa0c.jpeg",
+    "static/media/card_urus.jpg": "/TurboRent/static/media/card_urus.a8e56a1e94b106ced389.jpg",
+    "static/media/card_sl63.png": "/TurboRent/static/media/card_sl63.ef25b5185b0aea3d3e85.png",
+    "static/media/card_carrera4s.jpeg": "/TurboRent/static/media/card_carrera4s.d072366012996cf56198.jpeg",
+    "static/media/card_488.png": "/TurboRent/static/media/card_488.46fa97e97d002f10eeb5.png",
+    "static/media/card_cayman.jpeg": "/TurboRent/static/media/card_cayman.a9fc704b8cab13ca9af0.jpeg",
+    "static/media/card_r8gt.png": "/TurboRent/static/media/card_r8gt.dfa0f843723aa78d33ba.png",
+    "static/media/card_c63.jpg": "/TurboRent/static/media/card_c63.5dbe54e9438f78b9178f.jpg",
+    "static/media/turbo_rent.png": "/TurboRent/static/media/turbo_rent.032c6e1a45bcf88f296e.png",
+    "index.html": "/TurboRent/index.html",
+    "main.e5508123.css.map": "/TurboRent/static/css/main.e5508123.css.map",
+    "main.b9ebc0ab.js.map": "/TurboRent/static/js/main.b9ebc0ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5508123.css",
+    "static/js/main.b9ebc0ab.js"
+  ]
+}
