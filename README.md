@@ -9,7 +9,3 @@ It's created with CRA (create-react-app) and is fully responsive.
 ## How to run it
 
 `npm start`
-
-## <a href="https://dukecoding.github.io/turbo-rent/">Live version</a>
-
-Hosted via Github Pages
