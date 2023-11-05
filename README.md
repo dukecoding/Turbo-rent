@@ -10,6 +10,6 @@ It's created with CRA (create-react-app) and is fully responsive.
 
 `npm start`
 
-## Live version?
+## <a href="https://dukecoding.github.io/turbo-rent/">Live version</a>
 
-I will be hosting it in the future.
+Hosted via Github Pages
