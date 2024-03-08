@@ -14,6 +14,25 @@ export default function Navigation() {
     }
   }, [window.innerWidth])
 
+  function scrollEnable() {
+    window.onscroll = () => {}
+    document.documentElement.style.scrollBehavior = 'smooth'
+  }
+
+  function scrollDisable() {
+    let scrollTop = document.documentElement.scrollTop
+    let scrollLeft = document.documentElement.scrollLeft
+    document.documentElement.style.scrollBehavior = 'auto'
+    window.onscroll = () => {
+      window.scrollTo(scrollLeft, scrollTop)
+    }
+  }
+
+  function closeMenu() {
+    setActiveClass('')
+    scrollEnable()
+  }
+
   return (
     <div className='navbar-container'>
       <a href='#' className='logo'>
@@ -49,13 +68,7 @@ export default function Navigation() {
             onClick={() => {
               setActiveClass('active')
 
-              // Disabling scroll
-              let scrollTop = document.documentElement.scrollTop
-              let scrollLeft = document.documentElement.scrollLeft
-              document.documentElement.style.scrollBehavior = 'auto'
-              window.onscroll = () => {
-                window.scrollTo(scrollLeft, scrollTop)
-              }
+              scrollDisable()
             }}
           >
             <div className='burger-icon'>
@@ -68,11 +81,7 @@ export default function Navigation() {
             <div
               className='close-menu'
               onClick={() => {
-                setActiveClass('')
-
-                // Enabling scroll (and reset to scroll-smooth)
-                window.onscroll = () => {}
-                document.documentElement.style.scrollBehavior = 'smooth'
+                closeMenu()
               }}
             >
               <div className='close-menu-button'></div>
@@ -81,7 +90,7 @@ export default function Navigation() {
               <a
                 href='#fleet'
                 onClick={() => {
-                  setActiveClass('')
+                  closeMenu()
                 }}
               >
                 FLEET
@@ -89,7 +98,7 @@ export default function Navigation() {
               <a
                 href='#about-us'
                 onClick={() => {
-                  setActiveClass('')
+                  closeMenu()
                 }}
               >
                 ABOUT US
@@ -97,7 +106,7 @@ export default function Navigation() {
               <a
                 href='#contact-form'
                 onClick={() => {
-                  setActiveClass('')
+                  closeMenu()
                 }}
               >
                 BOOK A RIDE
