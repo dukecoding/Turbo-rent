@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/turbo-rent/static/css/main.3d11dc2f.css",
-    "main.js": "/turbo-rent/static/js/main.694e5b95.js",
+    "main.js": "/turbo-rent/static/js/main.11798d17.js",
     "static/media/card_rs3.jpeg": "/turbo-rent/static/media/card_rs3.1148e67a32038f8c9710.jpeg",
     "static/media/card_aventador.jpeg": "/turbo-rent/static/media/card_aventador.7d15db51a5f2da1ac110.jpeg",
     "static/media/lambo_banner-kopia2.jpeg": "/turbo-rent/static/media/lambo_banner-kopia2.2ac88720edcab52ec848.jpeg",
@@ -20,10 +20,10 @@
     "static/media/turbo_rent.png": "/turbo-rent/static/media/turbo_rent.032c6e1a45bcf88f296e.png",
     "index.html": "/turbo-rent/index.html",
     "main.3d11dc2f.css.map": "/turbo-rent/static/css/main.3d11dc2f.css.map",
-    "main.694e5b95.js.map": "/turbo-rent/static/js/main.694e5b95.js.map"
+    "main.11798d17.js.map": "/turbo-rent/static/js/main.11798d17.js.map"
   },
   "entrypoints": [
     "static/css/main.3d11dc2f.css",
-    "static/js/main.694e5b95.js"
+    "static/js/main.11798d17.js"
   ]
 }
