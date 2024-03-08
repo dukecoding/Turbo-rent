@@ -9,7 +9,3 @@ It's created with CRA (create-react-app) and is fully responsive.
 ## How to run it
 
 `npm start`
-
-## Live version?
-
-I will be hosting it in the future.
